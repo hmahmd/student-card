@@ -10,13 +10,11 @@ function Submit(e) {
   let rollNo = rollNoInput.value.trim();
   let batchNo = batchNoInput.value.trim();
 
-  // ❌ Empty input
   if (name === "" || rollNo === "" || batchNo === "") {
     showResult.innerHTML = `<div class="result">Plz Fill All input</div>`;
     return;
   }
 
-  // ✅ REMOVE error message if exists
   let error = showResult.querySelector(".result");
   if (error) {
     error.remove();
@@ -31,7 +29,6 @@ function Submit(e) {
 
   saveData(data);
 
-  // ✅ ADD new card (no replace)
   showResult.innerHTML += `
     <div class="Success">
       <h3>Student ID Card! ✓</h3>
@@ -41,7 +38,6 @@ function Submit(e) {
     </div>
   `;
 
-  // Clear inputs
   nameInput.value = "";
   rollNoInput.value = "";
   batchNoInput.value = "";
