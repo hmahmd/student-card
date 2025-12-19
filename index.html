@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="Asset/hma.favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>student-card</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="Asset/hma.favicon.png" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
-  <title>student-card</title>
-</head>
-
-<body>
-  <form>
-    <h1>Student Information Form</h1>
-    <label for="nameInput" id="labelName">name:</label>
-    <input type="text" class="nameInput" id="nameInput" placeholder="enter student name">
-    <br>
-    <label for="rollNoInput" id="labelRollNo">roll number:</label>
-    <input type="text" class="rollNoInput" id="rollNoInput" placeholder="enter roll number">
-    <br>
-    <label for="batchNoInput" id="LabelBatchNo">batch:</label>
-    <input type="text" class="batchNoInput" id="batchNoInput" placeholder="enter batch number">
-    <br>
-    <button onclick="Submit(event)" id="btn">submit</button>
-    <p id="showResult"></p>
-  </form>
-  <script src="app.js"></script>
-</body>
-
-
+  <body>
+    <form>
+      <h1>Student Information Form</h1>
+      <label for="nameInput" id="labelName">name:</label>
+      <input
+        type="text"
+        class="nameInput"
+        id="nameInput"
+        placeholder="enter student name"
+      />
+      <br />
+      <label for="rollNoInput" id="labelRollNo">roll number:</label>
+      <input
+        type="text"
+        class="rollNoInput"
+        id="rollNoInput"
+        placeholder="enter roll number"
+      />
+      <br />
+      <label for="batchNoInput" id="LabelBatchNo">batch:</label>
+      <input
+        type="text"
+        class="batchNoInput"
+        id="batchNoInput"
+        placeholder="enter batch number"
+      />
+      <br />
+      <button onclick="Submit(event)" id="btn">submit</button>
+      <p id="showResult"></p>
+    </form>
+    <script src="app.js"></script>
+  </body>
 </html>
