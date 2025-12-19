@@ -56,3 +56,4 @@ function saveData(data) {
   students.push(data);
   localStorage.setItem("students", JSON.stringify(students));
 }
+
