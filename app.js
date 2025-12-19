@@ -15,6 +15,7 @@ function Submit(e) {
     return;
   }
 
+
   let error = showResult.querySelector(".result");
   if (error) {
     error.remove();
@@ -37,6 +38,7 @@ function Submit(e) {
       <p><strong>Batch Number:</strong> ${data.batch}</p>
     </div>
   `;
+
 
   nameInput.value = "";
   rollNoInput.value = "";
